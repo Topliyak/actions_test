@@ -31,4 +31,4 @@ jobs:
     
     - name: Run tests with pytest
       run: |
-        python -m uv run pytest tests/ -v
+        python -m uv run pytest -vvv -rc tests/ --disable-warnings
