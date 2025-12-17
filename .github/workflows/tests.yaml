@@ -24,6 +24,20 @@ jobs:
       run: |
         docker compose up --build --abort-on-container-exit tests
         # docker compose up tests
+
+    - name: Check test results
+      run: |
+        # Получаем exit code сервиса tests
+        TESTS_EXIT_CODE=$(docker compose ps -q tests | xargs docker inspect -f '{{.State.ExitCode}}')
+        if [ "$TESTS_EXIT_CODE" -ne 0 ]; then
+          echo "Tests failed with exit code: $TESTS_EXIT_CODE"
+          exit 1
+        else
+          echo "All tests passed!"
+        fi
+      
+    - name: Stop containers
+      run: docker compose down
     
     # - name: Set up Python ${{ matrix.python-version }}
     #   uses: actions/setup-python@v4
