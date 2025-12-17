@@ -31,4 +31,5 @@ jobs:
     
     - name: Run tests with pytest
       run: |
-        python -m uv run pytest -vvv -rc tests/ --disable-warnings
+        # python -m uv run pytest -vvv -rc tests/ --disable-warnings
+        make test-local
