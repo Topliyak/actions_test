@@ -1,0 +1,297 @@
+version = 1
+revision = 3
+requires-python = "==3.14.0"
+
+[[package]]
+name = "actions-test"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "fastapi" },
+    { name = "httpx" },
+    { name = "pydantic" },
+    { name = "pytest" },
+    { name = "uvicorn" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "fastapi", specifier = ">=0.124.0" },
+    { name = "httpx", specifier = ">=0.28.1" },
+    { name = "pydantic", specifier = ">=2.12.5" },
+    { name = "pytest", specifier = ">=9.0.2" },
+    { name = "uvicorn", specifier = ">=0.38.0" },
+]
+
+[[package]]
+name = "annotated-doc"
+version = "0.0.4"
+source = { registry = "https://pypi.yandex-team.ru/simple" }
+sdist = { url = "https://pypi.yandex-team.ru/repo/default/download/annotated-doc/1773121/annotated_doc-0.0.4.tar.gz", hash = "md5:825f2ecff1f182cd942ea09907ebafdb" }
+wheels = [
+    { url = "https://pypi.yandex-team.ru/repo/default/download/annotated-doc/1773120/annotated_doc-0.0.4-py3-none-any.whl", hash = "md5:ca0b005f5bcfb025d36cba1b10c77927" },
+]
+
+[[package]]
+name = "annotated-types"
+version = "0.7.0"
+source = { registry = "https://pypi.yandex-team.ru/simple" }
+sdist = { url = "https://pypi.yandex-team.ru/repo/default/download/annotated-types/1412332/annotated_types-0.7.0.tar.gz", hash = "md5:5c943b7c51b0b7dcadf46da4a99c84a1" }
+wheels = [
+    { url = "https://pypi.yandex-team.ru/repo/default/download/annotated-types/1412331/annotated_types-0.7.0-py3-none-any.whl", hash = "md5:b132aea373e91e5a46e3b5425c9970e2" },
+]
+
+[[package]]
+name = "anyio"
+version = "4.12.0"
+source = { registry = "https://pypi.yandex-team.ru/simple" }
+dependencies = [
+    { name = "idna" },
+]
+sdist = { url = "https://pypi.yandex-team.ru/repo/default/download/anyio/1785661/anyio-4.12.0.tar.gz", hash = "md5:a026af4a3b485699718761b1b44ad1df" }
+wheels = [
+    { url = "https://pypi.yandex-team.ru/repo/default/download/anyio/1785660/anyio-4.12.0-py3-none-any.whl", hash = "md5:c6fb85c8fd7262427cfb7f67ef670b98" },
+]
+
+[[package]]
+name = "certifi"
+version = "2025.11.12"
+source = { registry = "https://pypi.yandex-team.ru/simple" }
+sdist = { url = "https://pypi.yandex-team.ru/repo/default/download/certifi/1774818/certifi-2025.11.12.tar.gz", hash = "md5:430a5fa9f18895a9b69a018d2beae67b" }
+wheels = [
+    { url = "https://pypi.yandex-team.ru/repo/default/download/certifi/1774817/certifi-2025.11.12-py3-none-any.whl", hash = "md5:7cf85392819e7d6f24c8589826df5d95" },
+]
+
+[[package]]
+name = "click"
+version = "8.3.1"
+source = { registry = "https://pypi.yandex-team.ru/simple" }
+dependencies = [
+    { name = "colorama", marker = "sys_platform == 'win32'" },
+]
+sdist = { url = "https://pypi.yandex-team.ru/repo/default/download/click/1777739/click-8.3.1.tar.gz", hash = "md5:5f89d725a424b101607ec40927f78773" }
+wheels = [
+    { url = "https://pypi.yandex-team.ru/repo/default/download/click/1777738/click-8.3.1-py3-none-any.whl", hash = "md5:f032502934a5979330da77e3f09d889c" },
+]
+
+[[package]]
+name = "colorama"
+version = "0.4.6"
+source = { registry = "https://pypi.yandex-team.ru/simple" }
+sdist = { url = "https://pypi.yandex-team.ru/repo/default/download/colorama/1098885/colorama-0.4.6.tar.gz", hash = "md5:11fe1cbf8299798551ac88f824ea11c4" }
+wheels = [
+    { url = "https://pypi.yandex-team.ru/repo/default/download/colorama/1098884/colorama-0.4.6-py2.py3-none-any.whl", hash = "md5:3fc7a89530d68d7ea231ebe779c0db9c" },
+]
+
+[[package]]
+name = "fastapi"
+version = "0.124.0"
+source = { registry = "https://pypi.yandex-team.ru/simple" }
+dependencies = [
+    { name = "annotated-doc" },
+    { name = "pydantic" },
+    { name = "starlette" },
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://pypi.yandex-team.ru/repo/default/download/fastapi/1791169/fastapi-0.124.0.tar.gz", hash = "md5:00a4ecd17f40555f2dd4ce91a46d81b9" }
+wheels = [
+    { url = "https://pypi.yandex-team.ru/repo/default/download/fastapi/1791168/fastapi-0.124.0-py3-none-any.whl", hash = "md5:3530f5264050d256f72887611098206f" },
+]
+
+[[package]]
+name = "h11"
+version = "0.16.0"
+source = { registry = "https://pypi.yandex-team.ru/simple" }
+sdist = { url = "https://pypi.yandex-team.ru/repo/default/download/h11/1616046/h11-0.16.0.tar.gz", hash = "md5:af51401a776fd654cfd98a197af9f21f" }
+wheels = [
+    { url = "https://pypi.yandex-team.ru/repo/default/download/h11/1616045/h11-0.16.0-py3-none-any.whl", hash = "md5:ab5835960dca6f63c9317c218f646e66" },
+]
+
+[[package]]
+name = "httpcore"
+version = "1.0.9"
+source = { registry = "https://pypi.yandex-team.ru/simple" }
+dependencies = [
+    { name = "certifi" },
+    { name = "h11" },
+]
+sdist = { url = "https://pypi.yandex-team.ru/repo/default/download/httpcore/1616196/httpcore-1.0.9.tar.gz", hash = "md5:5157e7240632c2984cfda1f7ac54dfc7" }
+wheels = [
+    { url = "https://pypi.yandex-team.ru/repo/default/download/httpcore/1616195/httpcore-1.0.9-py3-none-any.whl", hash = "md5:146bed42feef3884ed52b749db3b02ae" },
+]
+
+[[package]]
+name = "httpx"
+version = "0.28.1"
+source = { registry = "https://pypi.yandex-team.ru/simple" }
+dependencies = [
+    { name = "anyio" },
+    { name = "certifi" },
+    { name = "httpcore" },
+    { name = "idna" },
+]
+sdist = { url = "https://pypi.yandex-team.ru/repo/default/download/httpx/1539545/httpx-0.28.1.tar.gz", hash = "md5:774cf32b9cd94a44189fbe5871026664" }
+wheels = [
+    { url = "https://pypi.yandex-team.ru/repo/default/download/httpx/1539544/httpx-0.28.1-py3-none-any.whl", hash = "md5:7cb326b464b75a04aa57954631097aa4" },
+]
+
+[[package]]
+name = "idna"
+version = "3.11"
+source = { registry = "https://pypi.yandex-team.ru/simple" }
+sdist = { url = "https://pypi.yandex-team.ru/repo/default/download/idna/1746323/idna-3.11.tar.gz", hash = "md5:9a9c33db960e0d35cc5b257c37dabeff" }
+wheels = [
+    { url = "https://pypi.yandex-team.ru/repo/default/download/idna/1746322/idna-3.11-py3-none-any.whl", hash = "md5:9a707ac0a65f018883cff8e82f48314e" },
+]
+
+[[package]]
+name = "iniconfig"
+version = "2.3.0"
+source = { registry = "https://pypi.yandex-team.ru/simple" }
+sdist = { url = "https://pypi.yandex-team.ru/repo/default/download/iniconfig/1751715/iniconfig-2.3.0.tar.gz", hash = "md5:5c1d9c21275feb3da71400bf716edd72" }
+wheels = [
+    { url = "https://pypi.yandex-team.ru/repo/default/download/iniconfig/1751714/iniconfig-2.3.0-py3-none-any.whl", hash = "md5:d3e156a9abd59ac8b5eb0c2e8b1c5dad" },
+]
+
+[[package]]
+name = "packaging"
+version = "25.0"
+source = { registry = "https://pypi.yandex-team.ru/simple" }
+sdist = { url = "https://pypi.yandex-team.ru/repo/default/download/packaging/1613061/packaging-25.0.tar.gz", hash = "md5:ab0ef21ddebe09d1803575120d3f99f8" }
+wheels = [
+    { url = "https://pypi.yandex-team.ru/repo/default/download/packaging/1613060/packaging-25.0-py3-none-any.whl", hash = "md5:5fa4842e2eb0d7883b4b0e7c42d6229e" },
+]
+
+[[package]]
+name = "pluggy"
+version = "1.6.0"
+source = { registry = "https://pypi.yandex-team.ru/simple" }
+sdist = { url = "https://pypi.yandex-team.ru/repo/default/download/pluggy/1627249/pluggy-1.6.0.tar.gz", hash = "md5:54391218af778acb006c2d915085d469" }
+wheels = [
+    { url = "https://pypi.yandex-team.ru/repo/default/download/pluggy/1627248/pluggy-1.6.0-py3-none-any.whl", hash = "md5:e107bd9fd0c26746617d74bac26fa0c5" },
+]
+
+[[package]]
+name = "pydantic"
+version = "2.12.5"
+source = { registry = "https://pypi.yandex-team.ru/simple" }
+dependencies = [
+    { name = "annotated-types" },
+    { name = "pydantic-core" },
+    { name = "typing-extensions" },
+    { name = "typing-inspection" },
+]
+sdist = { url = "https://pypi.yandex-team.ru/repo/default/download/pydantic/1784913/pydantic-2.12.5.tar.gz", hash = "md5:beb5176b58bf266a874ab4d085cdb766" }
+wheels = [
+    { url = "https://pypi.yandex-team.ru/repo/default/download/pydantic/1784912/pydantic-2.12.5-py3-none-any.whl", hash = "md5:0857f9b85480a4883a7ce20c8b07a025" },
+]
+
+[[package]]
+name = "pydantic-core"
+version = "2.41.5"
+source = { registry = "https://pypi.yandex-team.ru/simple" }
+dependencies = [
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://pypi.yandex-team.ru/repo/default/download/pydantic-core/1769280/pydantic_core-2.41.5.tar.gz", hash = "md5:54a367c4549ec48a8b3a63d38e821506" }
+wheels = [
+    { url = "https://pypi.yandex-team.ru/repo/default/download/pydantic-core/1769215/pydantic_core-2.41.5-cp314-cp314-macosx_10_12_x86_64.whl", hash = "md5:5117bb06d1f7512d6ba8ad75152f1f17" },
+    { url = "https://pypi.yandex-team.ru/repo/default/download/pydantic-core/1769216/pydantic_core-2.41.5-cp314-cp314-macosx_11_0_arm64.whl", hash = "md5:c3d2df9f35df969234acbc6a80c3187a" },
+    { url = "https://pypi.yandex-team.ru/repo/default/download/pydantic-core/1769217/pydantic_core-2.41.5-cp314-cp314-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "md5:8eee02a1ef306efc2cc90e64967aa3f2" },
+    { url = "https://pypi.yandex-team.ru/repo/default/download/pydantic-core/1769218/pydantic_core-2.41.5-cp314-cp314-manylinux_2_17_armv7l.manylinux2014_armv7l.whl", hash = "md5:ab990f8ec5f3e222c87a69a73a964753" },
+    { url = "https://pypi.yandex-team.ru/repo/default/download/pydantic-core/1769219/pydantic_core-2.41.5-cp314-cp314-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "md5:71b4a05956ddade00796a82d60e80b50" },
+    { url = "https://pypi.yandex-team.ru/repo/default/download/pydantic-core/1769220/pydantic_core-2.41.5-cp314-cp314-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "md5:05b103fdde32998381948ed1f40a33b0" },
+    { url = "https://pypi.yandex-team.ru/repo/default/download/pydantic-core/1769221/pydantic_core-2.41.5-cp314-cp314-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "md5:9e8d902abedd9503da79bf737269ca73" },
+    { url = "https://pypi.yandex-team.ru/repo/default/download/pydantic-core/1769222/pydantic_core-2.41.5-cp314-cp314-manylinux_2_5_i686.manylinux1_i686.whl", hash = "md5:d7e622001aa9a7db01e2e6d0159eb0c5" },
+    { url = "https://pypi.yandex-team.ru/repo/default/download/pydantic-core/1769223/pydantic_core-2.41.5-cp314-cp314-musllinux_1_1_aarch64.whl", hash = "md5:a9e888fd53c9556deef8a6c027361953" },
+    { url = "https://pypi.yandex-team.ru/repo/default/download/pydantic-core/1769224/pydantic_core-2.41.5-cp314-cp314-musllinux_1_1_armv7l.whl", hash = "md5:be467ea6e81ced00872b04314518bdc8" },
+    { url = "https://pypi.yandex-team.ru/repo/default/download/pydantic-core/1769225/pydantic_core-2.41.5-cp314-cp314-musllinux_1_1_x86_64.whl", hash = "md5:840e7f37b78b55788c0a345bf204744a" },
+    { url = "https://pypi.yandex-team.ru/repo/default/download/pydantic-core/1769240/pydantic_core-2.41.5-cp314-cp314-win32.whl", hash = "md5:db36c4a704edb05f0bda29e00a07748c" },
+    { url = "https://pypi.yandex-team.ru/repo/default/download/pydantic-core/1769241/pydantic_core-2.41.5-cp314-cp314-win_amd64.whl", hash = "md5:7a863c500493294f32e95bffaa55f914" },
+    { url = "https://pypi.yandex-team.ru/repo/default/download/pydantic-core/1769242/pydantic_core-2.41.5-cp314-cp314-win_arm64.whl", hash = "md5:5fd2bbac7d15ecf8848c7d2e0699134f" },
+    { url = "https://pypi.yandex-team.ru/repo/default/download/pydantic-core/1769226/pydantic_core-2.41.5-cp314-cp314t-macosx_10_12_x86_64.whl", hash = "md5:c933938145ab400e9d7ebbb41bde5383" },
+    { url = "https://pypi.yandex-team.ru/repo/default/download/pydantic-core/1769227/pydantic_core-2.41.5-cp314-cp314t-macosx_11_0_arm64.whl", hash = "md5:d807083f87eff98521ce174c4d4223dc" },
+    { url = "https://pypi.yandex-team.ru/repo/default/download/pydantic-core/1769228/pydantic_core-2.41.5-cp314-cp314t-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "md5:d11a3f864da60e74765770007c92859c" },
+    { url = "https://pypi.yandex-team.ru/repo/default/download/pydantic-core/1769229/pydantic_core-2.41.5-cp314-cp314t-manylinux_2_17_armv7l.manylinux2014_armv7l.whl", hash = "md5:74bd2955d251fbfcf1dd9ecffddeaec0" },
+    { url = "https://pypi.yandex-team.ru/repo/default/download/pydantic-core/1769230/pydantic_core-2.41.5-cp314-cp314t-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "md5:1950102c50dac0cbf8aba3eff4a3e23e" },
+    { url = "https://pypi.yandex-team.ru/repo/default/download/pydantic-core/1769231/pydantic_core-2.41.5-cp314-cp314t-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "md5:748c1b2a8b5a7519ef72f5737c8504a6" },
+    { url = "https://pypi.yandex-team.ru/repo/default/download/pydantic-core/1769232/pydantic_core-2.41.5-cp314-cp314t-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "md5:15130d785d9d60a06f55b0a75e2cddf3" },
+    { url = "https://pypi.yandex-team.ru/repo/default/download/pydantic-core/1769233/pydantic_core-2.41.5-cp314-cp314t-manylinux_2_5_i686.manylinux1_i686.whl", hash = "md5:a8e2d66e46985f2119fd41d5b776d98c" },
+    { url = "https://pypi.yandex-team.ru/repo/default/download/pydantic-core/1769234/pydantic_core-2.41.5-cp314-cp314t-musllinux_1_1_aarch64.whl", hash = "md5:d46345e949b541b1f89d31b11e671c78" },
+    { url = "https://pypi.yandex-team.ru/repo/default/download/pydantic-core/1769235/pydantic_core-2.41.5-cp314-cp314t-musllinux_1_1_armv7l.whl", hash = "md5:152fef9704a5ba5e48f255edd2cee4f0" },
+    { url = "https://pypi.yandex-team.ru/repo/default/download/pydantic-core/1769236/pydantic_core-2.41.5-cp314-cp314t-musllinux_1_1_x86_64.whl", hash = "md5:f9e655a2add7c5ee31c493edd53d45cf" },
+    { url = "https://pypi.yandex-team.ru/repo/default/download/pydantic-core/1769237/pydantic_core-2.41.5-cp314-cp314t-win32.whl", hash = "md5:a58d7d54df1c5971e04af4d765f38f96" },
+    { url = "https://pypi.yandex-team.ru/repo/default/download/pydantic-core/1769238/pydantic_core-2.41.5-cp314-cp314t-win_amd64.whl", hash = "md5:d774a1a554adc3b00b067e247296fee7" },
+    { url = "https://pypi.yandex-team.ru/repo/default/download/pydantic-core/1769239/pydantic_core-2.41.5-cp314-cp314t-win_arm64.whl", hash = "md5:a54a962a05e371d601467dcd5ec87d8a" },
+]
+
+[[package]]
+name = "pygments"
+version = "2.19.2"
+source = { registry = "https://pypi.yandex-team.ru/simple" }
+sdist = { url = "https://pypi.yandex-team.ru/repo/default/download/Pygments/1654842/pygments-2.19.2.tar.gz", hash = "md5:79260d1c566a507953a81d24b1c51c72" }
+wheels = [
+    { url = "https://pypi.yandex-team.ru/repo/default/download/Pygments/1654841/pygments-2.19.2-py3-none-any.whl", hash = "md5:c6f882e4a4ffd8543f245d4f7ce0d7fa" },
+]
+
+[[package]]
+name = "pytest"
+version = "9.0.2"
+source = { registry = "https://pypi.yandex-team.ru/simple" }
+dependencies = [
+    { name = "colorama", marker = "sys_platform == 'win32'" },
+    { name = "iniconfig" },
+    { name = "packaging" },
+    { name = "pluggy" },
+    { name = "pygments" },
+]
+sdist = { url = "https://pypi.yandex-team.ru/repo/default/download/pytest/1792626/pytest-9.0.2.tar.gz", hash = "md5:ce26088b3b97ab8fed58c8883de23241" }
+wheels = [
+    { url = "https://pypi.yandex-team.ru/repo/default/download/pytest/1792625/pytest-9.0.2-py3-none-any.whl", hash = "md5:600448842054deb501e95a70d7be737a" },
+]
+
+[[package]]
+name = "starlette"
+version = "0.50.0"
+source = { registry = "https://pypi.yandex-team.ru/simple" }
+dependencies = [
+    { name = "anyio" },
+]
+sdist = { url = "https://pypi.yandex-team.ru/repo/default/download/starlette/1769155/starlette-0.50.0.tar.gz", hash = "md5:f3479ed026aeaffb43af371d3b7db527" }
+wheels = [
+    { url = "https://pypi.yandex-team.ru/repo/default/download/starlette/1769154/starlette-0.50.0-py3-none-any.whl", hash = "md5:49d644e730683f9554f8d4f9ef6924ab" },
+]
+
+[[package]]
+name = "typing-extensions"
+version = "4.15.0"
+source = { registry = "https://pypi.yandex-team.ru/simple" }
+sdist = { url = "https://pypi.yandex-team.ru/repo/default/download/typing-extensions/1709171/typing_extensions-4.15.0.tar.gz", hash = "md5:079e529d0b271647f3ec2720aee8fc65" }
+wheels = [
+    { url = "https://pypi.yandex-team.ru/repo/default/download/typing-extensions/1709170/typing_extensions-4.15.0-py3-none-any.whl", hash = "md5:1394f56d85d87540f7907680572797e1" },
+]
+
+[[package]]
+name = "typing-inspection"
+version = "0.4.2"
+source = { registry = "https://pypi.yandex-team.ru/simple" }
+dependencies = [
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://pypi.yandex-team.ru/repo/default/download/typing-inspection/1735103/typing_inspection-0.4.2.tar.gz", hash = "md5:9271faadd8476a3600e9cf9d428d812c" }
+wheels = [
+    { url = "https://pypi.yandex-team.ru/repo/default/download/typing-inspection/1735102/typing_inspection-0.4.2-py3-none-any.whl", hash = "md5:245304d58de21f4f0bdd15f7ea4b0ea8" },
+]
+
+[[package]]
+name = "uvicorn"
+version = "0.38.0"
+source = { registry = "https://pypi.yandex-team.ru/simple" }
+dependencies = [
+    { name = "click" },
+    { name = "h11" },
+]
+sdist = { url = "https://pypi.yandex-team.ru/repo/default/download/uvicorn/1751828/uvicorn-0.38.0.tar.gz", hash = "md5:ee4fbbe43a1e58e6624adb2763161bee" }
+wheels = [
+    { url = "https://pypi.yandex-team.ru/repo/default/download/uvicorn/1751827/uvicorn-0.38.0-py3-none-any.whl", hash = "md5:4d9a728a4545a35dafabc4543c687029" },
+]
