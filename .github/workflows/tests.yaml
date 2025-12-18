@@ -22,7 +22,7 @@ jobs:
     
     - name: Build and run tests with Docker Compose
       run: |
-        pass | docker login -u abc --password-stdin
+        echo "pass" | docker login -u abc --password-stdin
         # docker compose up --build --abort-on-container-exit tests
         docker compose up --build --exit-code-from tests tests
 
